@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobPortal - Find Your Dream Job</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">JobPortal</div>
+            <ul>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#companies">Companies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div>
+                <a href="#login" class="btn">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Dream Job Today</h1>
+            <p>Connect with top companies and discover opportunities that match your skills and ambitions</p>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <form class="search-form">
+            <input type="text" placeholder="Job title, keywords, or company" required>
+            <select>
+                <option value="">All Locations</option>
+                <option value="remote">Remote</option>
+                <option value="new-york">New York</option>
+                <option value="san-francisco">San Francisco</option>
+                <option value="london">London</option>
+            </select>
+            <select>
+                <option value="">All Categories</option>
+                <option value="tech">Technology</option>
+                <option value="design">Design</option>
+                <option value="marketing">Marketing</option>
+                <option value="sales">Sales</option>
+            </select>
+            <button type="submit" class="btn">Search Jobs</button>
+        </form>
+    </section>
+
+    <section class="featured-jobs" id="jobs">
+        <h2 class="section-title">Featured Jobs</h2>
+        <div class="jobs-grid">
+            <div class="job-card">
+                <h3 class="job-title">Senior Frontend Developer</h3>
+                <div class="company">TechCorp Inc.</div>
+                <div class="job-meta">
+                    <span>📍 San Francisco, CA</span>
+                    <span>💼 Full-time</span>
+                    <span>💰 $120k - $150k</span>
+                </div>
+                <p class="job-description">We're looking for a passionate frontend developer to join our growing team and help build the next generation of web applications.</p>
+                <div class="job-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">CSS</span>
+                </div>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+
+            <div class="job-card">
+                <h3 class="job-title">UX/UI Designer</h3>
+                <div class="company">DesignStudio</div>
+                <div class="job-meta">
+                    <span>📍 New York, NY</span>
+                    <span>💼 Full-time</span>
+                    <span>💰 $90k - $120k</span>
+                </div>
+                <p class="job-description">Join our creative team to design beautiful and intuitive user experiences for web and mobile applications.</p>
+                <div class="job-tags">
+                    <span class="tag">Figma</span>
+                    <span class="tag">Adobe XD</span>
+                    <span class="tag">Prototyping</span>
+                </div>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+
+            <div class="job-card">
+                <h3 class="job-title">Data Scientist</h3>
+                <div class="company">DataTech Solutions</div>
+                <div class="job-meta">
+                    <span>📍 Remote</span>
+                    <span>💼 Full-time</span>
+                    <span>💰 $100k - $140k</span>
+                </div>
+                <p class="job-description">Work with large datasets to extract insights and build machine learning models that drive business decisions.</p>
+                <div class="job-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">SQL</span>
+                </div>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Create Your Profile</h3>
+                <p>Sign up and build your professional profile showcasing your skills, experience, and achievements.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Search & Apply</h3>
+                <p>Browse thousands of job opportunities and apply to positions that match your career goals.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Get Hired</h3>
+                <p>Connect with employers and land your dream job with our streamlined application process.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div>
+                <div class="stat-number">10,000+</div>
+                <div>Active Jobs</div>
+            </div>
+            <div>
+                <div class="stat-number">5,000+</div>
+                <div>Companies</div>
+            </div>
+            <div>
+                <div class="stat-number">50,000+</div>
+                <div>Job Seekers</div>
+            </div>
+            <div>
+                <div class="stat-number">95%</div>
+                <div>Success Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>JobPortal</h4>
+                <p>Your gateway to career opportunities. Find the perfect job that matches your skills and aspirations.</p>
+            </div>
+            <div class="footer-section">
+                <h4>For Job Seekers</h4>
+                <ul>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Career Advice</a></li>
+                    <li><a href="#">Resume Builder</a></li>
+                    <li><a href="#">Job Alerts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Employers</h4>
+                <ul>
+                    <li><a href="#">Post a Job</a></li>
+                    <li><a href="#">Find Candidates</a></li>
+                    <li><a href="#">Recruiting Solutions</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JobPortal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
