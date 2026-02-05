@@ -52,58 +52,45 @@
     </section>
 
     <section class="featured-jobs" id="jobs">
-        <h2 class="section-title">Featured Jobs</h2>
-        <div class="jobs-grid">
-            <div class="job-card">
-                <h3 class="job-title">Senior Frontend Developer</h3>
-                <div class="company">TechCorp Inc.</div>
-                <div class="job-meta">
-                    <span>📍 San Francisco, CA</span>
-                    <span>💼 Full-time</span>
-                    <span>💰 $120k - $150k</span>
+        <h2 class="section-title" id="jobHeader"></h2>
+        <div class="jobs-grid" id="jobsContainer">
+        </div>
+        <div class="add-job">
+            <button class="btn" id="addJobBtn">Add Job Offer</button>
+        </div>
+        <div class="add-job-form" id="jobForm">
+            <h3>Add Job</h3>
+            <form onsubmit="onAddJob(event)" id="jobGrid">
+                <div class="form-group">
+                    <label for="title">Role</label>
+                    <input type="text" name="title" id="title" placeholder="Enter job position/role">
                 </div>
-                <p class="job-description">We're looking for a passionate frontend developer to join our growing team and help build the next generation of web applications.</p>
-                <div class="job-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">CSS</span>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="description" placeholder="Enter job description">
                 </div>
-                <a href="#" class="btn">Apply Now</a>
-            </div>
-
-            <div class="job-card">
-                <h3 class="job-title">UX/UI Designer</h3>
-                <div class="company">DesignStudio</div>
-                <div class="job-meta">
-                    <span>📍 New York, NY</span>
-                    <span>💼 Full-time</span>
-                    <span>💰 $90k - $120k</span>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" name="company" id="company" placeholder="Enter company name">
                 </div>
-                <p class="job-description">Join our creative team to design beautiful and intuitive user experiences for web and mobile applications.</p>
-                <div class="job-tags">
-                    <span class="tag">Figma</span>
-                    <span class="tag">Adobe XD</span>
-                    <span class="tag">Prototyping</span>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="Enter company location">
                 </div>
-                <a href="#" class="btn">Apply Now</a>
-            </div>
-
-            <div class="job-card">
-                <h3 class="job-title">Data Scientist</h3>
-                <div class="company">DataTech Solutions</div>
-                <div class="job-meta">
-                    <span>📍 Remote</span>
-                    <span>💼 Full-time</span>
-                    <span>💰 $100k - $140k</span>
+                <div class="form-group">
+                    <label for="type">Job Type</label>
+                    <input type="text" name="type" id="type" placeholder="Enter job type(E.g. Full Time)">
                 </div>
-                <p class="job-description">Work with large datasets to extract insights and build machine learning models that drive business decisions.</p>
-                <div class="job-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">SQL</span>
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="text" name="salary" id="salary" placeholder="Enter salary(Eg. $10k-$12k)">
                 </div>
-                <a href="#" class="btn">Apply Now</a>
-            </div>
+                <div class="form-group">
+                    <label for="tag">Tags</label>
+                    <input type="text" name="tag" id="tag" placeholder="Enter tags(Eg. UI/UX,Remote)">
+                </div>
+                <button type="submit" class="btn">Add Job</button>
+            </form>
         </div>
     </section>
 
@@ -187,5 +174,7 @@
             <p>&copy; 2024 JobPortal. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="./JS/index.js"></script>
 </body>
 </html>
