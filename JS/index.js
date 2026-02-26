@@ -34,15 +34,18 @@ const JobData = [
     }
 ]
 
+let filteredJob = JobData;
+
 const jobHeader = document.querySelector("#jobHeader");
 const jobContainer = document.querySelector("#jobsContainer");
 const addJobBtn = document.querySelector("#addJobBtn");
 const jobForm = document.querySelector("#jobForm");
-const formGrid = document.querySelector("#jobGrid")
+const formGrid = document.querySelector("#jobGrid");
+const search = document.querySelector('#search')
 
 const renderJobs = () => {
-    jobHeader.innerHTML = `Featured Jobs (${JobData.length})`
-    jobContainer.innerHTML = JobData.map((job, index) => `
+    jobHeader.innerHTML = `Featured Jobs (${filteredJob.length})`
+    jobContainer.innerHTML = filteredJob.map((job, index) => `
         <div class="job-card">
             <h3 class="job-title">${job.title}</h3>
             <div class="company">${job.company}</div>
@@ -60,6 +63,19 @@ const renderJobs = () => {
             <button class="btn update" onclick="updateJob(${index})">Update</button>
         </div>
     `).join('');
+}
+
+const searchJob = (e) => {
+    e.preventDefault();
+    const query = e.target.query.value;
+
+    if(!query?.trim()) {
+        filteredJob = JobData;
+    }
+
+    filteredJob = JobData.filter(job => job.title.toLowerCase().includes(query.toLowerCase()) && job);
+
+    renderJobs();
 }
 
 const onAddJob = (event) => {

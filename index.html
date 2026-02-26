@@ -31,8 +31,8 @@
     </section>
 
     <section class="search-section">
-        <form class="search-form">
-            <input type="text" placeholder="Job title, keywords, or company" required>
+        <form class="search-form" id="search" onsubmit="searchJob(event)">
+            <input type="text" name="query" id="query" placeholder="Job title, keywords, or company">
             <select>
                 <option value="">All Locations</option>
                 <option value="remote">Remote</option>
