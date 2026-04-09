@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "spring.datasource.url",
+    "type": "java.lang.String",
+    "description": "URL of MySQL server"
+  },
+  {
+    "name": "spring.datasource.username",
+    "type": "java.lang.String",
+    "description": "Username of MySQL server"
+  },
+  {
+    "name": "spring.datasource.password",
+    "type": "java.lang.String",
+    "description": "Password of MySQL server"
+  }
+]}
